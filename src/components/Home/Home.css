@@ -1,0 +1,110 @@
+.home{
+    width: 100vw;
+    height: 100vh;
+}
+
+.banner{
+    position: absolute;
+    height: 90vh;
+    top: 8vh;
+    object-fit: contain;
+    left: 29%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    width: 50%;
+    font-family: 'Fredericka the Great';
+    font-size: 30px;
+}
+
+.home2{
+    width: 100vw;
+    height: 95vh;
+    background: #E9A516;
+    overflow: hidden;
+}
+
+.home3{
+    width: 100vw;
+    height: 95vh;
+    background: #7F4B1C;
+    overflow: hidden;
+}
+
+.home4{
+    width: 100vw;
+    height: 95vh;
+    background: #B7DDFF;
+    overflow: hidden;
+}
+
+.home5{
+    width: 100vw;
+    height: 95vh;
+    background: #D0D1CC;
+    overflow: hidden;
+}
+
+.home6{
+    width: 100vw;
+    height: 93vh;
+    background: #FCF7E1;
+    overflow: hidden;
+}
+
+.block1{
+    margin-top: 30px;
+    margin-left: 5px;
+    width: 350px;
+    border: 10px solid white;
+    box-shadow: 10px 10px 10px 0px wheat;
+}
+
+.block2{
+    position: absolute;
+    width: 350px;
+    margin-top: 250px;
+    margin-left: 5px;
+    border: 10px solid white;
+    box-shadow: 10px 10px 10px 0px wheat;
+}
+
+.block3{
+    position: absolute;
+    margin-left: 379px;
+    margin-top: 30px;
+    width: 350px;
+    border: 10px solid white;
+    box-shadow: 10px 10px 10px 0px wheat;
+}
+
+.block4{
+    position: absolute;
+    width: 350px;
+    margin-left: 49.5%;
+    margin-top: 250px;
+    border: 10px solid white;
+    box-shadow: 10px 10px 10px 0px wheat;
+}
+
+h1{
+    margin: 35% 20px;
+}
+
+.btn{
+    margin-top: -50% !important;
+    margin-left: 80% !important;
+    width: 70px !important;
+    background-color: #DFC6AB !important;
+    font-family: 'Fredericka the Great' !important;
+    color: blue !important;
+}
+
+.add2{
+    height: 100vh;
+}
