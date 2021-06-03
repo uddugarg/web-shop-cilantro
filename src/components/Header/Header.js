@@ -1,14 +1,15 @@
 import { AppBar, Badge, IconButton, Toolbar, Typography } from "@material-ui/core"
 import { ShoppingCart } from "@material-ui/icons"
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import logo from '../../assets/logo.webp'
 
 import useStyles from './styles';
 
-const Header = () => {
+const Header = ({ totalItems }) => {
 
     const classes = useStyles();
+    const location = useLocation();
 
     return (
         <>
@@ -27,13 +28,18 @@ const Header = () => {
                         <Link to='/recipe'>Recipe</Link>
                     </Typography>
                     <div className={classes.grow} />
-                    <div className={classes.button}>
-                        <IconButton aria-label='Show Cart Items' color='inherit'>
-                            <Badge badgeContent={2} color='secondary'>
-                                <ShoppingCart />
-                            </Badge>
-                        </IconButton>
-                    </div>
+                    {location.pathname === '/' || location.pathname === '/products'
+                        ?
+                        <Link to='/cart' className={classes.button}>
+                            <IconButton aria-label='Show Cart Items' color='inherit'>
+                                <Badge badgeContent={totalItems} color='secondary'>
+                                    <ShoppingCart />
+                                </Badge>
+                            </IconButton>
+                        </Link>
+                        :
+                        null
+                    }
                 </Toolbar>
             </AppBar>
         </>
